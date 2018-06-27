@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="absFiles\AbsFrameLessAutoSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayCore\FFmpegPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\LyricWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\MvWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bottomWidget\TextMovingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\WebWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="absFiles\baseDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="absFiles\baseWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="absFiles\basewindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bottomWidget\bottomWidgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\buttonstackedwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deskTopLrc\deskTopLrcWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainWindows\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainWindows\mainWindowContentWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainWindows\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleLeftStackWidget0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleLeftStackWidget1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleLeftStackWidget2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleLeftStackWidget3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleLeftStackWidget4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleSearchTableWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleSearchWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleWidgetRight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleWidgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middleconvienttwobutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleWidget\middlewidgetleft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dataBase\myDataBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayCore\myMediaList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="absFiles\myPushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="absFiles\mySlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\myTableAddWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\myTablePlayListFinal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="netWork\mynetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\myshowtablebutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\mytablewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\playingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tableWidgetFiles\pushButtonOnTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="singleApplication\qsingleapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="otherWidget\skinWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="otherWidget\skinWidgetSliderWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topWidget\topSearchTipsWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topWidget\topwidgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trayIconMenu\trayiconmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="absFiles\AbsFrameLessAutoSize.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayCore\FFmpegPlayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\LyricWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="middleWidget\MvWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="bottomWidget\TextMovingWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="middleWidget\WebWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="absFiles\baseDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="absFiles\baseWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="absFiles\basewindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bottomWidget\bottomWidgets.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\buttonstackedwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="middleWidget\decodekrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="deskTopLrc\deskTopLrcWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="mainWindows\mainWindowContentWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainWindows\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget0.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget2.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget3.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget4.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleSearchTableWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleSearchWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleWidgetRight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleWidgets.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleconvienttwobutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="middleWidget\middlewidgetleft.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="dataBase\myDataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="PlayCore\myMediaList.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="absFiles\myPushButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="absFiles\mySlider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myTableAddWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myTablePlayListFinal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="netWork\mynetwork.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myshowtablebutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\mytablewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\playingWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\pushButtonOnTable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="singleApplication\qsingleapplication.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="otherWidget\skinWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="otherWidget\skinWidgetSliderWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="topWidget\topSearchTipsWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="topWidget\topwidgets.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="trayIconMenu\trayiconmenu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="(1).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(2).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(3).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="(4).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\skin\??.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\QWebViewStyle.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_addtips">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_close">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_cloud">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_cross">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_del">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_download">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_download">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_downloadmini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_equalizer">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_favorite_no">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_favorite_yes">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_game">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_islove">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_listcircle">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_listhide">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_listjump">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_listrandom">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_listscircle_single">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_listshow">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_listsingle">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_location">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_love">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_lrc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_mask.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_message">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_miniframe">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_mini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_miniplaylist">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_mobile">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_more">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_more">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_music">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_mv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_next">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_pause">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_phone">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_playcard">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_play">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_previous">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_radio">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_refresh(1).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_refresh(2).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_refresh(3).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_searchadd">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_search">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_search">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\btn_searchplay">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_setting">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_skin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\btn_tool">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\bottomwidget\btn_vol">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\indicator.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\indicator_down">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\indicator_menu">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\indicator_top">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\main\kugou.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\main\kwgou.rc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_2DC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_Author.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_addfolder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_backups.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\lab_success.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\topwidget\label_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\loading.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_lock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_log.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_lrc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_next">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_pause">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_play">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_previous">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\trayMenu\menu_vol">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\net_connect">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="res_bottomwidget.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="res_main.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="res_middlewidget.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="res_otherwidget.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="res_topwidget.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="res_traymenu.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="return(1).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="return(2).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="return(3).png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\otherWidget\selected.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\main\trayIcon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\unchecked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\middlewidget\wire_connect">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="image\main\kwgou.rc" />
+  </ItemGroup>
+</Project>

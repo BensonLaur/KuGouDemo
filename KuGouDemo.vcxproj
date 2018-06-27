@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13BDFCFC-C5D8-3E21-8B37-0400C28619C1}</ProjectGuid>
+    <RootNamespace>KuGouDemo</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>KuGouDemo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>KuGouDemo</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">KuGouDemo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">KuGouDemo</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;./threadFiles;dataBase;deskTopLrc;trayIconMenu;tableWidgetFiles;PlayCore;PlayCore/libvlc_include;PlayCore\include;netWork;topWidget;middleWidget;bottomWidget;otherWidget;absFiles;mainWindows;$(QTDIR)\include;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;release;$(QTDIR)\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;.\PlayCore\lib\avcodec.lib;.\PlayCore\lib\avdevice.lib;.\PlayCore\lib\avfilter.lib;.\PlayCore\lib\avutil.lib;.\PlayCore\lib\avformat.lib;.\PlayCore\lib\postproc.lib;.\PlayCore\lib\swresample.lib;.\PlayCore\lib\SDL2main.lib;.\PlayCore\lib\swscale.lib;.\PlayCore\lib\SDL2.lib;.\middleWidget\zlib\zdll.lib;$(QTDIR)\lib\Qt5Multimedia.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Sql.lib;$(QTDIR)\lib\Qt5Network.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;.\PlayCore\lib;.\middleWidget\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\KuGouDemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;$(Platform);QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_MSC_VER=1900;_$(Platform)</Define>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;$(QTDIR)\mkspecs/$(Platform)-msvc2015;.;./threadFiles;./dataBase;./deskTopLrc;./trayIconMenu;./tableWidgetFiles;./PlayCore;./PlayCore/libvlc_include;./PlayCore/include;./netWork;./topWidget;./middleWidget;./bottomWidget;./otherWidget;./absFiles;./mainWindows;$(QTDIR)\include;$(QTDIR)\include/QtMultimedia;$(QTDIR)\include/QtWidgets;$(QTDIR)\include/QtGui;$(QTDIR)\include/QtANGLE;$(QTDIR)\include/QtSql;$(QTDIR)\include/QtNetwork;$(QTDIR)\include/QtCore</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <InputFile>%(FullPath)</InputFile>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;./threadFiles;dataBase;deskTopLrc;trayIconMenu;tableWidgetFiles;PlayCore;PlayCore/libvlc_include;PlayCore\include;netWork;topWidget;middleWidget;bottomWidget;otherWidget;absFiles;mainWindows;$(QTDIR)\include;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtCore;debug;$(QTDIR)\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;.\PlayCore\lib\avcodec.lib;.\PlayCore\lib\avdevice.lib;.\PlayCore\lib\avfilter.lib;.\PlayCore\lib\avutil.lib;.\PlayCore\lib\avformat.lib;.\PlayCore\lib\postproc.lib;.\PlayCore\lib\swresample.lib;.\PlayCore\lib\SDL2main.lib;.\PlayCore\lib\swscale.lib;.\PlayCore\lib\SDL2.lib;.\middleWidget\zlib\zdll.lib;$(QTDIR)\lib\Qt5Multimediad.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Sqld.lib;$(QTDIR)\lib\Qt5Networkd.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;.\PlayCore\lib;.\middleWidget\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\KuGouDemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;$(Platform);QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_MSC_VER=1900;_$(Platform)</Define>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <InputFile>%(FullPath)</InputFile>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;$(QTDIR)\mkspecs/$(Platform)-msvc2015;.;./threadFiles;./dataBase;./deskTopLrc;./trayIconMenu;./tableWidgetFiles;./PlayCore;./PlayCore/libvlc_include;./PlayCore/include;./netWork;./topWidget;./middleWidget;./bottomWidget;./otherWidget;./absFiles;./mainWindows;$(QTDIR)\include;$(QTDIR)\include/QtMultimedia;$(QTDIR)\include/QtWidgets;$(QTDIR)\include/QtGui;$(QTDIR)\include/QtANGLE;$(QTDIR)\include/QtSql;$(QTDIR)\include/QtNetwork;$(QTDIR)\include/QtCore</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <InputFile>%(FullPath)</InputFile>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <QTDIR>$(QTDIR)</QTDIR>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="absFiles\AbsFrameLessAutoSize.cpp" />
+    <ClCompile Include="PlayCore\FFmpegPlayer.cpp" />
+    <ClCompile Include="middleWidget\LyricWidget.cpp" />
+    <ClCompile Include="middleWidget\MvWidget.cpp" />
+    <ClCompile Include="bottomWidget\TextMovingWidget.cpp" />
+    <ClCompile Include="middleWidget\WebWidget.cpp" />
+    <ClCompile Include="absFiles\baseDialog.cpp" />
+    <ClCompile Include="absFiles\baseWidget.cpp" />
+    <ClCompile Include="absFiles\basewindow.cpp" />
+    <ClCompile Include="bottomWidget\bottomWidgets.cpp" />
+    <ClCompile Include="middleWidget\buttonstackedwidget.cpp" />
+    <ClCompile Include="deskTopLrc\deskTopLrcWidget.cpp" />
+    <ClCompile Include="mainWindows\main.cpp" />
+    <ClCompile Include="mainWindows\mainWindowContentWidget.cpp" />
+    <ClCompile Include="mainWindows\mainwindow.cpp" />
+    <ClCompile Include="middleWidget\middleLeftStackWidget0.cpp" />
+    <ClCompile Include="middleWidget\middleLeftStackWidget1.cpp" />
+    <ClCompile Include="middleWidget\middleLeftStackWidget2.cpp" />
+    <ClCompile Include="middleWidget\middleLeftStackWidget3.cpp" />
+    <ClCompile Include="middleWidget\middleLeftStackWidget4.cpp" />
+    <ClCompile Include="middleWidget\middleSearchTableWidget.cpp" />
+    <ClCompile Include="middleWidget\middleSearchWidget.cpp" />
+    <ClCompile Include="middleWidget\middleWidgetRight.cpp" />
+    <ClCompile Include="middleWidget\middleWidgets.cpp" />
+    <ClCompile Include="middleWidget\middleconvienttwobutton.cpp" />
+    <ClCompile Include="middleWidget\middlewidgetleft.cpp" />
+    <ClCompile Include="dataBase\myDataBase.cpp" />
+    <ClCompile Include="PlayCore\myMediaList.cpp" />
+    <ClCompile Include="absFiles\myPushButton.cpp" />
+    <ClCompile Include="absFiles\mySlider.cpp" />
+    <ClCompile Include="tableWidgetFiles\myTableAddWidget.cpp" />
+    <ClCompile Include="tableWidgetFiles\myTablePlayListFinal.cpp" />
+    <ClCompile Include="netWork\mynetwork.cpp" />
+    <ClCompile Include="tableWidgetFiles\myshowtablebutton.cpp" />
+    <ClCompile Include="tableWidgetFiles\mytablewidget.cpp" />
+    <ClCompile Include="tableWidgetFiles\playingWidget.cpp" />
+    <ClCompile Include="tableWidgetFiles\pushButtonOnTable.cpp" />
+    <ClCompile Include="singleApplication\qsingleapplication.cpp" />
+    <ClCompile Include="otherWidget\skinWidget.cpp" />
+    <ClCompile Include="otherWidget\skinWidgetSliderWidget.cpp" />
+    <ClCompile Include="topWidget\topSearchTipsWidget.cpp" />
+    <ClCompile Include="topWidget\topwidgets.cpp" />
+    <ClCompile Include="trayIconMenu\trayiconmenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="absFiles\AbsFrameLessAutoSize.h">
+    </QtMoc>
+    <QtMoc Include="PlayCore\FFmpegPlayer.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\LyricWidget.h">
+    </QtMoc>
+    <ClInclude Include="middleWidget\MvWidget.h" />
+    <QtMoc Include="bottomWidget\TextMovingWidget.h">
+    </QtMoc>
+    <ClInclude Include="middleWidget\WebWidget.h" />
+    <QtMoc Include="absFiles\baseDialog.h">
+    </QtMoc>
+    <QtMoc Include="absFiles\baseWidget.h">
+    </QtMoc>
+    <QtMoc Include="absFiles\basewindow.h">
+    </QtMoc>
+    <QtMoc Include="bottomWidget\bottomWidgets.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\buttonstackedwidget.h">
+    </QtMoc>
+    <ClInclude Include="middleWidget\decodekrc.h" />
+    <QtMoc Include="deskTopLrc\deskTopLrcWidget.h">
+    </QtMoc>
+    <ClInclude Include="global.h" />
+    <QtMoc Include="mainWindows\mainWindowContentWidget.h">
+    </QtMoc>
+    <QtMoc Include="mainWindows\mainwindow.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget0.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget1.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget2.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget3.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleLeftStackWidget4.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleSearchTableWidget.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleSearchWidget.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleWidgetRight.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleWidgets.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middleconvienttwobutton.h">
+    </QtMoc>
+    <QtMoc Include="middleWidget\middlewidgetleft.h">
+    </QtMoc>
+    <ClInclude Include="dataBase\myDataBase.h" />
+    <QtMoc Include="PlayCore\myMediaList.h">
+    </QtMoc>
+    <QtMoc Include="absFiles\myPushButton.h">
+    </QtMoc>
+    <QtMoc Include="absFiles\mySlider.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myTableAddWidget.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myTablePlayListFinal.h">
+    </QtMoc>
+    <QtMoc Include="netWork\mynetwork.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\myshowtablebutton.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\mytablewidget.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\playingWidget.h">
+    </QtMoc>
+    <QtMoc Include="tableWidgetFiles\pushButtonOnTable.h">
+    </QtMoc>
+    <QtMoc Include="singleApplication\qsingleapplication.h">
+    </QtMoc>
+    <QtMoc Include="otherWidget\skinWidget.h">
+    </QtMoc>
+    <ClInclude Include="otherWidget\skinWidgetSliderWidget.h" />
+    <QtMoc Include="topWidget\topSearchTipsWidget.h">
+    </QtMoc>
+    <QtMoc Include="topWidget\topwidgets.h">
+    </QtMoc>
+    <QtMoc Include="trayIconMenu\trayiconmenu.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="(1).png" />
+    <None Include="(2).png" />
+    <None Include="(3).png" />
+    <None Include="(4).png" />
+    <None Include="image\skin\??.jpg" />
+    <None Include="css\QWebViewStyle.css" />
+    <None Include="image\middlewidget\btn_addtips" />
+    <None Include="image\topwidget\btn_close" />
+    <None Include="image\middlewidget\btn_cloud" />
+    <None Include="image\middlewidget\btn_cross" />
+    <None Include="image\middlewidget\btn_del" />
+    <None Include="image\bottomwidget\btn_download" />
+    <None Include="image\middlewidget\btn_download" />
+    <None Include="image\middlewidget\btn_downloadmini" />
+    <None Include="image\bottomwidget\btn_equalizer" />
+    <None Include="image\bottomwidget\btn_favorite_no" />
+    <None Include="image\bottomwidget\btn_favorite_yes" />
+    <None Include="image\topwidget\btn_game" />
+    <None Include="image\topwidget\btn_" />
+    <None Include="image\middlewidget\btn_islove" />
+    <None Include="image\bottomwidget\btn_listcircle" />
+    <None Include="image\middlewidget\btn_listhide" />
+    <None Include="image\bottomwidget\btn_listjump" />
+    <None Include="image\bottomwidget\btn_listrandom" />
+    <None Include="image\bottomwidget\btn_listscircle_single" />
+    <None Include="image\middlewidget\btn_listshow" />
+    <None Include="image\bottomwidget\btn_listsingle" />
+    <None Include="image\middlewidget\btn_location" />
+    <None Include="image\middlewidget\btn_love" />
+    <None Include="image\bottomwidget\btn_lrc" />
+    <None Include="image\middlewidget\btn_mask.png" />
+    <None Include="image\topwidget\btn_message" />
+    <None Include="image\topwidget\btn_miniframe" />
+    <None Include="image\topwidget\btn_mini" />
+    <None Include="image\bottomwidget\btn_miniplaylist" />
+    <None Include="image\topwidget\btn_mobile" />
+    <None Include="image\bottomwidget\btn_more" />
+    <None Include="image\middlewidget\btn_more" />
+    <None Include="image\middlewidget\btn_music" />
+    <None Include="image\middlewidget\btn_mv" />
+    <None Include="image\bottomwidget\btn_next" />
+    <None Include="image\bottomwidget\btn_pause" />
+    <None Include="image\middlewidget\btn_phone" />
+    <None Include="image\topwidget\btn_playcard" />
+    <None Include="image\bottomwidget\btn_play" />
+    <None Include="image\bottomwidget\btn_previous" />
+    <None Include="image\middlewidget\btn_radio" />
+    <None Include="image\topwidget\btn_refresh(1).png" />
+    <None Include="image\topwidget\btn_refresh(2).png" />
+    <None Include="image\topwidget\btn_refresh(3).png" />
+    <None Include="image\middlewidget\btn_searchadd" />
+    <None Include="image\middlewidget\btn_search" />
+    <None Include="image\topwidget\btn_search" />
+    <None Include="image\middlewidget\btn_searchplay" />
+    <None Include="image\topwidget\btn_setting" />
+    <None Include="image\topwidget\btn_skin" />
+    <None Include="image\topwidget\btn_tool" />
+    <None Include="image\bottomwidget\btn_vol" />
+    <None Include="image\middlewidget\checked.png" />
+    <None Include="image\middlewidget\indicator.png" />
+    <None Include="image\middlewidget\indicator_down" />
+    <None Include="image\middlewidget\indicator_menu" />
+    <None Include="image\middlewidget\indicator_top" />
+    <None Include="image\main\kugou.ico" />
+    <None Include="image\main\kwgou.rc" />
+    <None Include="image\middlewidget\lab_2DC.png" />
+    <None Include="image\middlewidget\lab_Author.png" />
+    <None Include="image\middlewidget\lab_add.png" />
+    <None Include="image\middlewidget\lab_addfolder.png" />
+    <None Include="image\middlewidget\lab_backups.png" />
+    <None Include="image\middlewidget\lab_success.png" />
+    <None Include="image\topwidget\label_icon.png" />
+    <None Include="image\middlewidget\loading.png" />
+    <None Include="image\trayMenu\menu_close.png" />
+    <None Include="image\trayMenu\menu_lock.png" />
+    <None Include="image\trayMenu\menu_log.png" />
+    <None Include="image\trayMenu\menu_lrc.png" />
+    <None Include="image\trayMenu\menu_next" />
+    <None Include="image\trayMenu\menu_pause" />
+    <None Include="image\trayMenu\menu_play" />
+    <None Include="image\trayMenu\menu_previous" />
+    <None Include="image\trayMenu\menu_setting.png" />
+    <None Include="image\trayMenu\menu_vol" />
+    <None Include="image\middlewidget\net_connect" />
+    <QtRcc Include="res_bottomwidget.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_bottomwidget</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_bottomwidget</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="res_main.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_main</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_main</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="res_middlewidget.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_middlewidget</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_middlewidget</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="res_otherwidget.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_otherwidget</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_otherwidget</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="res_topwidget.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_topwidget</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_topwidget</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="res_traymenu.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res_traymenu</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res_traymenu</InitFuncName>
+    </QtRcc>
+    <None Include="return(1).png" />
+    <None Include="return(2).png" />
+    <None Include="return(3).png" />
+    <None Include="image\otherWidget\selected.png" />
+    <None Include="image\main\trayIcon.png" />
+    <None Include="image\middlewidget\unchecked.png" />
+    <None Include="image\middlewidget\wire_connect" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="image\main\kwgou.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="Qt 5.7.1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
